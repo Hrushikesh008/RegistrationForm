@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <h1 id="title">Registration Form</h1> 
-    <p id="description">Please fill out the form below to register:</p> 
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out the form below to register:</p>
     <form id="form">
         <div class="form-group">
             <label for="first-name">First Name:</label>
@@ -28,22 +30,12 @@
         </div>
         <div class="form-group">
             <label for="pincode">Pin Code:</label>
-            <input type="text" id="pincode" name="pincode" required placeholder="Enter your pin code"> 
+            <input type="text" id="pincode" name="pincode" required placeholder="Enter your pin code">
         </div>
         <div class="form-group">
             <label>Gender:</label>
             <input type="radio" id="male" name="gender" value="Male" required> Male
-            <input type="radio" id="female" name="gender" value="Female" required> Female 
-        </div>
-        <div class="form-group">
-            <label>Choice of Food (choose at least 2):</label>
-            <div class="food-options">
-                <label class="food">Choice of Food (choose at least 2):</label><br>
-        <input type="checkbox" name="food" value="Dosa"> Dosa
-        <input type="checkbox" name="food" value="Idly"> Idly
-        <input type="checkbox" name="food" value="Poori"> Poori
-        <input type="checkbox" name="food" value="Chapati"> Chapati<br>
-            </div>
+            <input type="radio" id="female" name="gender" value="Female" required> Female
         </div>
         <div class="form-group">
             <label for="state">State:</label>
@@ -53,8 +45,15 @@
             <label for="country">Country:</label>
             <input type="text" id="country" name="country" required>
         </div>
+        <div class="food-options">
+            <label class="food">Choice of Food (choose at least 2):</label><br>
+            <input type="checkbox" name="food" value="Dosa"> Dosa
+            <input type="checkbox" name="food" value="Idly"> Idly
+            <input type="checkbox" name="food" value="Poori"> Poori
+            <input type="checkbox" name="food" value="Chapati"> Chapati<br>
+        </div>
         <div class="form-group">
-            <button type="submit" id="submit" class="btn btn-primary">Submit</button> 
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>
 
@@ -82,4 +81,5 @@
     <script src="./script.js"></script>
     <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 </body>
+
 </html>
